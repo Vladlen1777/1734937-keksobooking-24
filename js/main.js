@@ -1,34 +1,30 @@
-const AUTHOR = ["avatar"];
+const AUTHORS = ['avatar'];
 
-const OFFER = [
-  "title",
-  "address",
-  "price",
-  "type",
-  "rooms",
-  "guests",
-  "checkin",
-  "checkout",
-  "features",
-  "description",
-  "photos",
+const OFFERS = [
+  'title',
+  'address',
+  'price',
+  'type',
+  'rooms',
+  'guests',
+  'checkin',
+  'checkout',
+  'features',
+  'description',
+  'photos',
 ];
 
-const LOCATION = ["lat", "lng"];
+const LOCATIONS = ['lat', 'lng'];
 
 const SIMILAR_DATE_COUNT = 3;
 
-const getRandomArrayElement = (elements) => {
-  return elements[_.random(0, elements.length - 1)];
-};
+const getRandomArrayElement = (elements) => elements[_.random(0, elements.length - 1)];
 
-const informationDate = () => {
-  return {
-    author: getRandomArrayElement(AUTHOR),
-    offer: getRandomArrayElement(OFFER),
-    location: getRandomArrayElement(LOCATION),
-  };
-};
+const informationDate = () => ({
+  authors: getRandomArrayElement(AUTHORS),
+  offers: getRandomArrayElement(OFFERS),
+  locations: getRandomArrayElement(LOCATIONS),
+});
 
 const similarDate = Array.from({ length: SIMILAR_DATE_COUNT }, informationDate);
 
