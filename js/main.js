@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-import {date} from './date.js';
+import {form} from './date.js';
 import {form} from './form.js';
 import {map} from './map.js';
 
-=======
->>>>>>> a57881d485d74f717ed78042781f97b2b31efa41
+
 const AUTHORS = ['avatar'];
 
 const OFFERS = [
@@ -25,11 +23,10 @@ const LOCATIONS = ['lat', 'lng'];
 
 const SIMILAR_DATE_COUNT = 3;
 
-<<<<<<< HEAD
-=======
+
 const getRandomArrayElement = (elements) => elements[_.random(0, elements.length - 1)];
 
->>>>>>> a57881d485d74f717ed78042781f97b2b31efa41
+
 const informationDate = () => ({
   authors: getRandomArrayElement(AUTHORS),
   offers: getRandomArrayElement(OFFERS),
@@ -38,11 +35,10 @@ const informationDate = () => ({
 
 const similarDate = Array.from({ length: SIMILAR_DATE_COUNT }, informationDate);
 
-<<<<<<< HEAD
-=======
+
 console.log(similarDate);
 
->>>>>>> a57881d485d74f717ed78042781f97b2b31efa41
+
 /*
 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 Функция, возвращающая случайное целое число из переданного диапазона включительно
